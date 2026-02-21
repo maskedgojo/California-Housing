@@ -6,10 +6,10 @@
 
 - **Course Code:** CS33002  
 - **Course Name:** Applications Development Laboratory  
-- **Student Name:** [Your Name]  
-- **Roll Number:** [Your Roll Number]  
+- **Student Name:** Kushaagra Singh  
+- **Roll Number:** 23052972  
 - **Semester:** 6th  
-- **Instructor:** [Instructor Name]  
+- **Instructor:** Dr. Murari Mandal  
 
 ---
 
@@ -204,102 +204,128 @@ The web dashboard contains:
 
 # 📁 Project Structure
 
+```
 housing_project/
 │
 ├── notebook/
-│ └── housing.ipynb
+│   └── housing.ipynb
 │
 ├── models/
-│ ├── regression_model.pkl
-│ ├── random_forest_model.pkl
-│ ├── svm_model.pkl
-│ ├── neural_network_model.pkl
-│ ├── kmeans_model.pkl
-│ ├── scaler.pkl
-│ └── cluster_scaler.pkl
+│   ├── regression_model.pkl
+│   ├── random_forest_model.pkl
+│   ├── svm_model.pkl
+│   ├── neural_network_model.pkl
+│   ├── kmeans_model.pkl
+│   ├── scaler.pkl
+│   └── cluster_scaler.pkl
 │
 ├── static/
-│ ├── style/
-│   |── home.css
-│   └── predict.css
-│ └── images/
-│ └── (saved plots)
+│   ├── style/
+│   │   ├── home.css
+│   │   └── predict.css
+│   └── images/
+│       └── (saved plots)
 │
 ├── templates/
-│ ├── home.html
-│ └── predict.html
+│   ├── home.html
+│   └── predict.html
 │
 ├── app.py
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
 # ⚙️ Installation & Setup
 
-## 1️ Create Virtual Environment
+## 1️⃣ Create Virtual Environment
 
 ```bash
 python -m venv venv
-## 2️ Activate Environment
-Windows:
+```
+
+## 2️⃣ Activate Environment
+
+**Windows:**
+
+```bash
 venv\Scripts\activate
+```
 
-## 3️ Install Dependencies
+## 3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-## 4️ Run the Flask Application
+## 4️⃣ Run the Flask Application
+
+```bash
 python app.py
+```
 
 Open your browser and visit:
 
+```
 http://127.0.0.1:5000
+```
 
+---
 
-### 🧪 Example Input
-Feature	Example Value
-MedInc	    3.5
-HouseAge	25
-AveRooms	5.5
-AveBedrms	1
-Population	1200
-AveOccup	3
-Latitude	34.2
-Longitude	-118.4
+# 🧪 Example Input
 
-### 🛠️ Technologies Used
+| Feature     | Example Value |
+|------------|--------------|
+| MedInc     | 3.5          |
+| HouseAge   | 25           |
+| AveRooms   | 5.5          |
+| AveBedrms  | 1            |
+| Population | 1200         |
+| AveOccup   | 3            |
+| Latitude   | 34.2         |
+| Longitude  | -118.4       |
 
-- Python
-- NumPy
-- Pandas
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Flask
-- HTML5
-- CSS3
-- Bootstrap 5
-- Joblib
+---
 
-📊 Dataset
+# 🛠️ Technologies Used
 
-California Housing Dataset
-Source: sklearn.datasets.fetch_california_housing()
+- Python  
+- NumPy  
+- Pandas  
+- Scikit-learn  
+- Matplotlib  
+- Seaborn  
+- Flask  
+- HTML5  
+- CSS3  
+- Bootstrap 5  
+- Joblib  
+
+---
+
+# 📊 Dataset
+
+**California Housing Dataset**  
+Source: `sklearn.datasets.fetch_california_housing()`
 
 The dataset contains housing data from the 1990 California census and includes socio-economic and geographic attributes.
 
-🚀 Project Status
+---
 
-✔ Data preprocessing completed
-✔ Regression models trained and evaluated
-✔ Classification models compared
-✔ SVM and Neural Network implemented
-✔ Clustering with PCA visualization
-✔ Models saved using pickle
-✔ Web deployment completed
+# 🚀 Project Status
 
-📄 Academic Declaration
+- ✔ Data preprocessing completed  
+- ✔ Regression models trained and evaluated  
+- ✔ Classification models compared  
+- ✔ SVM and Neural Network implemented  
+- ✔ Clustering with PCA visualization  
+- ✔ Models saved using pickle  
+- ✔ Web deployment completed  
 
-This project was developed strictly according to the assignment requirements.
+---
+
+# 📄 Academic Declaration
+
+This project was developed strictly according to the assignment requirements.  
 Only the California Housing dataset was used, and all data splitting rules were followed as specified.
