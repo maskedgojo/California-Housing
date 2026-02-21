@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>California Housing ML Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style/home.css') }}">
+</head>
+<body>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content text-center">
+    <h1>California Housing Machine Learning Application</h1>
+    <p>
+      This dataset is sourced from sklearn.datasets.fetch_california_housing and
+      represents 1990 California census housing data used for predictive modeling
+      and advanced analytics experimentation.
+    </p>
+    <div class="mt-4">
+      <a href="/predict" class="btn btn-outline-light btn-premium">Make Prediction</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= DATASET OVERVIEW ================= -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="glass-card p-4 text-center">
+          <i class="bi bi-database icon"></i>
+          <h5>Dataset Source</h5>
+          <p>Scikit-learn California Housing dataset.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="glass-card p-4 text-center">
+          <i class="bi bi-bar-chart icon"></i>
+          <h5>Input Features</h5>
+          <p>MedInc, HouseAge, AveRooms and more.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="glass-card p-4 text-center">
+          <i class="bi bi-bullseye icon"></i>
+          <h5>Target Variable</h5>
+          <p>MedHouseVal – Median house value.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="glass-card p-4 text-center">
+          <i class="bi bi-shuffle icon"></i>
+          <h5>Data Split</h5>
+          <p>70% Training • 15% Validation • 15% Testing</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= PROJECT PHASES ================= -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 section-title">Project Phases</h2>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="phase-card p-4">
+          <i class="bi bi-graph-up icon"></i>
+          <h6>Phase 1: Data Preprocessing & EDA</h6>
+          <p>Cleaning, visualization and exploratory insights.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="phase-card p-4">
+          <i class="bi bi-calculator icon"></i>
+          <h6>Phase 2: Regression Analysis</h6>
+          <p>Linear and advanced regression modeling.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="phase-card p-4">
+          <i class="bi bi-diagram-3 icon"></i>
+          <h6>Phase 3: Classification Models</h6>
+          <p>Low, medium and high price prediction.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="phase-card p-4">
+          <i class="bi bi-bounding-box icon"></i>
+          <h6>Phase 4: Support Vector Machine</h6>
+          <p>Margin-based supervised learning.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="phase-card p-4">
+          <i class="bi bi-cpu icon"></i>
+          <h6>Phase 5: Neural Network</h6>
+          <p>Deep learning regression and classification.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="phase-card p-4">
+          <i class="bi bi-cloud-upload icon"></i>
+          <h6>Phase 6: Web Deployment</h6>
+          <p>Model deployment with interactive UI.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= LEARNING TASKS ================= -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 section-title">Learning Tasks</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="feature-card p-5 text-center">
+          <h5>Regression</h5>
+          <p>Predict Median House Value.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card p-5 text-center">
+          <h5>Classification</h5>
+          <p>Predict Low / Medium / High Categories.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card p-5 text-center">
+          <h5>Clustering</h5>
+          <p>Group Housing Regions by Similarity.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= DATA SPLIT ================= -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 section-title">Dataset Split</h2>
+
+    <div class="mb-4">
+      <label class="fw-semibold">Training – 70%</label>
+      <div class="progress rounded-pill">
+        <div class="progress-bar bg-success progress-animate" style="width:70%"></div>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <label class="fw-semibold">Validation – 15%</label>
+      <div class="progress rounded-pill">
+        <div class="progress-bar bg-info progress-animate" style="width:15%"></div>
+      </div>
+    </div>
+
+    <div>
+      <label class="fw-semibold">Testing – 15%</label>
+      <div class="progress rounded-pill">
+        <div class="progress-bar bg-secondary progress-animate" style="width:15%"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-4 text-center">
+  <div class="container">
+    <hr>
+    <p class="mb-1 fw-semibold">California Housing ML Dashboard</p>
+    <small>Dataset: sklearn.datasets.fetch_california_housing</small>
+  </div>
+</footer>
+
+</body>
+</html>
