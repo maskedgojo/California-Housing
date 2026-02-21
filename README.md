@@ -187,12 +187,6 @@ The web dashboard contains:
 - Learning task summary
 - Data split visualization
 
-### 📊 Reports Page
-- EDA graphs
-- Regression evaluation plots
-- Neural network training curves
-- PCA and clustering visualizations
-
 ### 🔮 Prediction Page
 - Input housing features
 - Outputs:
